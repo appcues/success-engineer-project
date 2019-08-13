@@ -30,3 +30,56 @@
     transform: rotate(360deg);
   }
 }
+
+iframe.appcues-tooltip-container {
+	margin: 0 auto;
+	border: 10px outset #ddd;
+  background: blue !important;
+  background-color: blue !important;
+}
+
+.tooltip {
+  background: aquamarine;
+}
+
+/* .hotspot>div>div>div.apc-spotlight:after {
+   border-radius: inherit;
+   content: " ";
+   position: absolute;
+   top: 10px;
+   left: 10px;
+   right: 10px;
+   bottom: 10px;
+   z-index: -1;
+   box-shadow: 0 0 0 2px #6553bf, 0 0 0 18px #8c90b2;
+}
+
+.apc-spotlight {
+  background: rgba(255,0,0,0.5) !important;
+}
+
+appcues-layer .apc-spotlight {
+  box-shadow: 0 0 0 2px #6553bf, 0 0 0 18px #8c90b2;
+ background: rgba(255,0,0,0.5) !important;
+ border-image: radial-gradient(transparent 2%, rgba(255,0,0,0.5) 28%) 49% 49% 49% 49% !important;
+} */
+
+/* Hide the original Appcues beacon */
+appcues-layer svg.beacon {
+  display: none;
+}
+
+/* Replace it with styles on the .beacon-container */
+appcues-layer .beacon-container {
+  background: red;
+  border-radius: 24px;
+  display: block;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+}
+
+/* Define a hover style */
+.beacon-container:hover {
+  background: dodgerblue;
+}

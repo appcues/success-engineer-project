@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
 const Navigation = () => (
   <div>
     <Link to="/">Home</Link>
@@ -10,5 +11,9 @@ const Navigation = () => (
     <Link to="/contact">Contact Us</Link>
   </div>
 );
+
+
+
+
 
 export default Navigation;

@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="//fast.appcues.com/49805.js"></script>
+    <script>
+    Appcues.identify("userbob", {
+        name: 'bob'});
+  </script>
+  <script>
+  Appcues.on("flow_started", function(event) {
+  console.log("Appcues started a flow with ID " + event.flowId);
+});
+</script>
+
+    <link rel="stylesheet" type="text/css" href="//fast.appcues.com/widget.css">
+
     <meta charset="utf-8">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,13 +32,22 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <link rel="stylesheet" type="text/css" href="//fast.appcues.com/widget.css">
+    <!-- styling for the appcues widget -->
     <title>React App</title>
+    <script type="text/javascript">
+    window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+      heap.load("1994516134");
+</script>
+
   </head>
   <body>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
+    <script src="//fast.appcues.com/widget-bundle.js" type="text/javascript"></script>
     <div id="root"></div>
+    <div class="hello">Hello</div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
