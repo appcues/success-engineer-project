@@ -9,6 +9,12 @@ const Navigation = () => (
     <Link to="/about">About</Link>
     {" - "}
     <Link to="/contact">Contact Us</Link>
+    {" - "}
+    <Link to="/account">Account</Link>
+    {" - "}
+    <Link to="/account/acct123">Account 123</Link>
+    {" - "}
+    <Link to="/account/acct123/accountsettings">Account 123 Settings</Link>
   </div>
 );
 
