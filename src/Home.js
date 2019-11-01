@@ -14,7 +14,7 @@ const Home = () => {
     <div >
       <h1 data-info="bob">Welcome to Awesome Company, Inc.</h1>
       <button onclick={pearsonEvent() }>This is a button </button>
-      <button onclick={ampEvent()}> take me there</button>
+      <button onclick={ampEvent()}>Won't you take me there</button>
     </div>
   );
 };
